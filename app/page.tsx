@@ -14,9 +14,10 @@ export default function HomePage() {
   return <main>
     <section className="home-hero page-gutter">
       <div className="hero-content">
+        <span className="eyebrow"><span className="eyebrow-dot" />{t.home.eyebrow}</span>
         <h1>{t.home.title}</h1>
         <p className="hero-description">{t.home.body}</p>
-        <div className="hero-actions"><Button asChild><Link href="/showings">{t.home.renter}<MoveUpRight size={16} /></Link></Button><Button variant="outline" asChild><Link href="/property-management">{t.home.owner}</Link></Button></div>
+        <div className="hero-actions"><Button asChild><Link href="/showings">{t.home.renter}<MoveUpRight size={16} /></Link></Button></div>
         <div className="hero-note"><span className="note-rule" />{t.home.note}</div>
       </div>
       <div className="hero-visual">
